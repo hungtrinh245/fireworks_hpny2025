@@ -307,7 +307,7 @@ function updateWish() {
 }
 
 
-setInterval(updateWish, 4000); // Thay đổi lời chúc mỗi 3 giây
+setInterval(updateWish, 4000); // Thay đổi lời chúc mỗi 4 giây
 
 
 
