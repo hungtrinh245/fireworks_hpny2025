@@ -379,3 +379,16 @@ body {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
+.firework-wishes {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgb(213, 14, 14);
+  font-size: 2rem;
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+

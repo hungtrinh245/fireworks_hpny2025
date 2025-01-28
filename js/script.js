@@ -285,6 +285,32 @@ const finaleSelector = () => store.state.config.finale;
 const skyLightingSelector = () => +store.state.config.skyLighting;
 const scaleFactorSelector = () => store.state.config.scaleFactor;
 
+
+const wishes = [
+  { text: "Chúc mừng năm mới!", color: "red" },
+  { text: "Năm mới an khang thịnh vượng!", color: "red" },
+  { text: "Vạn sự như ý, phát tài phát lộc!", color: "red" },
+  { text: "Sức khỏe dồi dào, hạnh phúc ngập tràn!", color: "yellow" },
+  { text: "Tấn tài tấn lộc, vạn điều may mắn!", color: "yellow" },
+  { text: "Chúc bạn một năm tràn đầy niềm vui!", color: "yellow" },
+  { text: "Cả nhà luôn luôn bình an và hạnh phúc!", color: "yellow" }
+];
+
+
+function updateWish() {
+  const wishText = document.getElementById("wish-text");
+  const randomIndex = Math.floor(Math.random() * wishes.length);
+  const selectedWish = wishes[randomIndex];
+  
+  wishText.textContent = selectedWish.text;
+  wishText.style.color = selectedWish.color;
+}
+
+
+setInterval(updateWish, 3000); // Thay đổi lời chúc mỗi 3 giây
+
+
+
 // Help Content
 const helpContent = {
   shellType: {
